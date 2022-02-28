@@ -1,0 +1,104 @@
+.place-card-big-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.place-card-big-container1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.place-card-big-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+  border-top-left-radius: var(--dl-radius-radius-radius8);
+  border-top-right-radius: var(--dl-radius-radius-radius8);
+}
+.place-card-big-image1 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+  border-top-left-radius: var(--dl-radius-radius-radius8);
+  border-top-right-radius: var(--dl-radius-radius-radius8);
+}
+.place-card-big-container2 {
+  width: 75%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: column;
+}
+.place-card-big-text {
+  color: var(--dl-color-primary-100);
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.place-card-big-text1 {
+  font-size: 12px;
+  max-width: 75%;
+  margin-bottom: var(--dl-space-space-doubleunit);
+}
+.place-card-big-link {
+  z-index: 100;
+  align-self: center;
+  text-align: center;
+  transition: 0.3s;
+  list-style-type: disc;
+  text-decoration: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+.place-card-big-link:focus {
+  color: var(--dl-color-primary-100);
+  background-color: var(--dl-color-gray-900);
+}
+.place-card-big-link:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-primary-700);
+}
+@media(max-width: 991px) {
+  .place-card-big-container {
+    width: auto;
+  }
+  .place-card-big-container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .place-card-big-image {
+    width: auto;
+    max-width: auto;
+  }
+  .place-card-big-image1 {
+    width: auto;
+    max-width: auto;
+  }
+}
+@media(max-width: 767px) {
+  .place-card-big-container {
+    width: auto;
+  }
+  .place-card-big-container1 {
+    flex: 1;
+    width: auto;
+    padding: var(--dl-space-space-halfunit);
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .place-card-big-container2 {
+    flex: 1;
+    width: auto;
+  }
+}
+@media(max-width: 479px) {
+  .place-card-big-container {
+    width: 300px;
+  }
+}
